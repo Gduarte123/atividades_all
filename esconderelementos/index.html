@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Esconder e Mostrar com JS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+ 
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+ 
+        #paragrafo {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <p id="paragrafo">Este parágrafo pode ser escondido ou exibido!</p>
+    <button id="btnEsconder">Esconder</button>
+    <button id="btnMostrar">Mostrar</button>
+ 
+    <script>
+        const paragrafo = document.getElementById("paragrafo");
+        const btnEsconder = document.getElementById("btnEsconder");
+        const btnMostrar = document.getElementById("btnMostrar");
+ 
+        btnEsconder.addEventListener("click", function () {
+            paragrafo.style.display = "none";
+            btnEsconder.style.display = "none";
+        });
+ 
+        btnMostrar.addEventListener("click", function () {
+            paragrafo.style.display = "block";
+            btnEsconder.style.display = "inline-block";
+        });
+    </script>
+</body>
+</html>
