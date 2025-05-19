@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Errou!</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background: url('images/errou.jpg') no-repeat center center fixed;
+      background-size: cover;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.9);
+      padding: 40px;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+      animation: shake 0.6s ease-in-out;
+      max-width: 500px;
+    }
+
+    h1 {
+      font-size: 36px;
+      color: #b22222;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 20px;
+      color: #444;
+      margin-bottom: 30px;
+    }
+
+    a {
+      display: inline-block;
+      padding: 12px 25px;
+      font-size: 18px;
+      background: #ff8c00;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: 0.3s ease;
+    }
+
+    a:hover {
+      background: #e67300;
+      transform: scale(1.05);
+    }
+
+    @keyframes shake {
+      0% { transform: translateX(0); }
+      20% { transform: translateX(-10px); }
+      40% { transform: translateX(10px); }
+      60% { transform: translateX(-8px); }
+      80% { transform: translateX(8px); }
+      100% { transform: translateX(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>❌ Eita! Você errou!</h1>
+    <p>A palavra digitada não está correta. Tente de novo!</p>
+    <a href="index.html">Tentar novamente</a>
+  </div>
+</body>
+</html>

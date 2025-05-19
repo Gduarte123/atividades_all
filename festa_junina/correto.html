@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Acertou!</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background: url('images/lampiao.png') no-repeat center center fixed;
+      background-size: cover;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.9);
+      padding: 40px;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+      animation: bounceIn 0.8s ease-out;
+      max-width: 500px;
+    }
+
+    h1 {
+      font-size: 36px;
+      color: #7a4646;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 20px;
+      color: #444;
+      margin-bottom: 30px;
+    }
+
+    a {
+      display: inline-block;
+      padding: 12px 25px;
+      font-size: 18px;
+      background: #ff8c00;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: 0.3s ease;
+    }
+
+    a:hover {
+      background: #e67300;
+      transform: scale(1.05);
+    }
+
+    @keyframes bounceIn {
+      0% {
+        opacity: 0;
+        transform: scale(0.8);
+      }
+      60% {
+        opacity: 1;
+        transform: scale(1.05);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>🎉 Você Acertou!</h1>
+    <p>Parabéns, a palavra secreta era <strong>Lampião</strong>!</p>
+    <a href="index.html">Tentar outra vez</a>
+  </div>
+</body>
+</html>
